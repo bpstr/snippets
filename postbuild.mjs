@@ -40,12 +40,7 @@ if ((argvs[0] === '--p' || argvs[0] === '-path') && argvs[1]) {
         })
     }
 
-    if (PRODUCTION_URL && process.env.NODE_ENV === 'production') {
-        replaceUrlsInFiles(PUBLIC_DIR, files)
-    } else {
-        console.log('skip postbuild')
-        process.exit(0)
-    }
+    replaceUrlsInFiles(PUBLIC_DIR, files)
 } else {
     console.error('please provide a path argument "-path", "--p"')
     process.exit(1)
