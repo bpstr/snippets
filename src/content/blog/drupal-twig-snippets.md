@@ -1,3 +1,11 @@
+---
+title: Drupal Twig snippets
+tags:
+  - Drupal
+description: Drupal twig samples
+pubDatetime: 2023-06-27
+---
+
 ## Attach library from twig template
 
 ```twig
